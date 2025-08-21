@@ -23,10 +23,10 @@ function Nav() {
           <span>Jobbord</span>
           <span className='absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded-xl'></span>
         </p>
-        <p className='text-white hover:transition-all duration-300 cursor-pointer relative group'>
-          <span>เพิ่มโอกาสถูกจ้างงาน</span>
+        <Link to='/WorkCategories'> <p className='text-white hover:transition-all duration-300 cursor-pointer relative group'>
+          <span>หมวดหมู่งาน</span>
           <span className='absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded-xl'></span>
-        </p>
+        </p></Link>
         <p className='text-white hover:transition-all duration-300 cursor-pointer relative group'>
           <span>การจ้างงาน</span>
           <span className='absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded-xl'></span>

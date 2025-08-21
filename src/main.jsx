@@ -6,6 +6,7 @@ import App from './App.jsx'
 import './index.css'
 import Profile from './Profile.jsx'
 import ChatApp from './ChatPage.jsx'
+import WorkCategories from './WorkCategories.jsx'
 
 const router = createBrowserRouter([
 
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
   {
     path: 'ChatApp',
     element:<ChatApp/>
+
+  },
+  {
+    path: 'WorkCategories',
+    element:<WorkCategories/>
 
   },
 
