@@ -20,7 +20,7 @@ function Nav() {
       {/* Desktop Menu */}
       <div className='hidden md:flex items-center gap-6 font-bold text-base px-3'>
         <p className='text-white hover:transition-all duration-300 cursor-pointer relative group'>
-          <span>Jobbord</span>
+          <Link to ="/JobBoard"><span>Jobbord</span></Link>
           <span className='absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded-xl'></span>
         </p>
         <p className='text-white hover:transition-all duration-300 cursor-pointer relative group'>
