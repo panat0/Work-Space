@@ -6,6 +6,8 @@ import App from './App.jsx'
 import './index.css'
 import Profile from './Profile.jsx'
 import ChatApp from './ChatPage.jsx'
+import WorkCategories from './WorkCategories.jsx'
+import JobBoard from './Jobboard.jsx'
 
 const router = createBrowserRouter([
 
