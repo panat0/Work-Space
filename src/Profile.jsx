@@ -4,7 +4,7 @@ import ProfileHeader from './Component/ProfileHeader'
 import RatingCard from './Component/RatingCard';
 import AboutSection from './Component/AboutSection';
 import SkillsSection from './Component/SkillsSection';
-import Review from './Component/review';
+import Review from './Component/Review';
 import Portfolio from './Component/Portfolio';
 import Employment from './Component/Employment'
 
