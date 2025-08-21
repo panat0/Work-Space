@@ -5,7 +5,7 @@ import RatingCard from './Component/RatingCard';
 import AboutSection from './Component/AboutSection';
 import SkillsSection from './Component/SkillsSection';
 import Portfolio from './Component/Portfolio';
-import Review from './Component/review';
+import Review from './Component/Review';
 import Employment from './Component/Employment'
 
 function Profile() {
