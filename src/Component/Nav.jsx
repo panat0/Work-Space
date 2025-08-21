@@ -31,9 +31,9 @@ function Nav() {
           <span>การจ้างงาน</span>
           <span className='absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded-xl'></span>
         </p>
-        <p className='bg-white py-2 rounded-xl px-3 hover:bg-gray-100 transition-colors cursor-pointer text-orange-500'>
-          Seller Center
-        </p>
+        <Link to="/ChatApp"><p className='bg-white py-2 rounded-xl px-3 hover:bg-gray-100 transition-colors cursor-pointer text-orange-500'>
+          Message ✉️
+        </p></Link>
         <div className='bg-white h-[40px] w-[2.5px] rounded-lg'></div>
         <img src={Thai} alt="Thai" className='h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity' />
         <Link to="/Profile">  <img src={Profile} alt="Profile" className='h-9 w-auto rounded-full cursor-pointer transition-opacity ' /></Link>
