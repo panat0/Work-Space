@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import './index.css'
 import Profile from './Profile.jsx'
+import ChatApp from './ChatPage.jsx'
 
 const router = createBrowserRouter([
 
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: 'Profile',
     element:<Profile/>
+
+  },
+  {
+    path: 'ChatApp',
+    element:<ChatApp/>
 
   },
 
