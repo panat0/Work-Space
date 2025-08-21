@@ -1,9 +1,10 @@
 import React from 'react'
 
-function long() {
+function Long() {
   return (
     <>
-      <section className="bg-gradient-to-r from-orange1 via-orange2 to-orange3 text-center py-16">
+      {/* เพิ่ม relative และ z-index เพื่อให้ element นี้อยู่เหนือ shadow */}
+      <section className="relative z-20 bg-gradient-to-r from-orange1 via-orange2 to-orange3 text-center py-16">
         <p className="text-5xl font-bold text-white mb-4 pb-7">
           พร้อมเริ่มต้นแล้วหรือยัง?
         </p>
@@ -20,4 +21,4 @@ function long() {
   )
 }
 
-export default long
+export default Long
