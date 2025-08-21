@@ -16,10 +16,10 @@ function Portfolio() {
     const portfolioItems = [
         { id: 1, image: one, },
         { id: 2, image: two, },
-        { id: 3, image: three,  },
+        { id: 3, image: three, },
         { id: 4, image: four, },
-        { id: 5, image: five,  },
-        { id: 6, image: six,  },
+        { id: 5, image: five, },
+        { id: 6, image: six, },
         { id: 7, image: test, },
 
     ];
@@ -56,7 +56,7 @@ function Portfolio() {
     useEffect(() => {
         const handleKeyPress = (e) => {
             if (!isModalOpen) return;
-            
+
             switch (e.key) {
                 case 'Escape':
                     closeModal();
@@ -77,7 +77,7 @@ function Portfolio() {
         if (isModalOpen) {
             window.addEventListener('keydown', handleKeyPress);
         }
-        
+
         return () => window.removeEventListener('keydown', handleKeyPress);
     }, [isModalOpen, currentImageIndex, portfolioItems.length]);
 
@@ -110,13 +110,12 @@ function Portfolio() {
 
             {/* Modal สำหรับแสดงรูปภาพขนาดใหญ่ */}
             {currentImage && (
-                <div 
-                    className={`fixed inset-0 z-50 bg-black transition-all duration-300 ${
-                        isModalOpen ? 'bg-opacity-90' : 'bg-opacity-0 pointer-events-none'
-                    }`}
+                <div
+                    className={`fixed inset-0 z-50 bg-black transition-all duration-300 ${isModalOpen ? 'bg-opacity-90' : 'bg-opacity-0 pointer-events-none'
+                        }`}
                 >
                     {/* พื้นที่ว่างสำหรับคลิกปิด */}
-                    <div 
+                    <div
                         className="absolute inset-0 cursor-pointer"
                         onClick={closeModal}
                     />
@@ -126,17 +125,17 @@ function Portfolio() {
                         onClick={closeModal}
                         className="absolute top-6 right-6 z-20 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-full p-3 transition-all duration-200"
                     >
-                        <svg 
-                            className="w-6 h-6" 
-                            fill="none" 
-                            stroke="currentColor" 
+                        <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
                             viewBox="0 0 24 24"
                         >
-                            <path 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                strokeWidth={2} 
-                                d="M6 18L18 6M6 6l12 12" 
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M6 18L18 6M6 6l12 12"
                             />
                         </svg>
                     </button>
@@ -148,9 +147,8 @@ function Portfolio() {
 
                     {/* รูปภาพหลัก */}
                     <div className="flex items-center justify-center h-full px-20 pb-32">
-                        <div className={`relative transition-all duration-300 transform ${
-                            isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
-                        }`}>
+                        <div className={`relative transition-all duration-300 transform ${isModalOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+                            }`}>
                             <img
                                 src={currentImage.image}
                                 alt={currentImage.title}
@@ -190,11 +188,10 @@ function Portfolio() {
                             {portfolioItems.map((item, index) => (
                                 <div
                                     key={item.id}
-                                    className={`flex-shrink-0 cursor-pointer transition-all duration-200 ${
-                                        index === currentImageIndex 
-                                            ? 'ring-4 ring-orange-500 scale-110' 
-                                            : 'hover:scale-105 opacity-70 hover:opacity-100'
-                                    }`}
+                                    className={`flex-shrink-0 cursor-pointer transition-all duration-200 ${index === currentImageIndex
+                                        ? 'ring-4 ring-orange-500 scale-110'
+                                        : 'hover:scale-105 opacity-70 hover:opacity-100'
+                                        }`}
                                     onClick={() => goToImage(index)}
                                 >
                                     <img
