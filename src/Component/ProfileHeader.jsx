@@ -64,7 +64,7 @@ function ProfileHeader() {
       </div>
 
       {/* Chat Button */}
-      <button className="w-full flex items-center justify-center bg-orange-500 text-white py-3 px-4 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+      <button className="w-full flex items-center justify-center bg-gradient-to-r from-orange1 to-orange2 text-white py-3 px-4 rounded-lg  transition-colors font-medium">
         <img src={iconEdit} />
         แก้ไขโปรไฟล์
       </button>

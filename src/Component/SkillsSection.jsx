@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award } from 'lucide-react';
-import iconEdit from '../image/edit.png'
+import Edit from '../image/edit.png'
 import iconStar from '../image/iconStar.png'
 import one from '../image/iconSkill/1.png'
 import two from '../image/iconSkill/2.png'
@@ -20,9 +20,9 @@ function SkillsSection() {
                         <img className="w-7 h-7 text-orange-500 mr-2" src={iconStar} />
                         <h2 className="text-lg font-semibold text-gray-800">ทักษะความสามารถ</h2>
                     </div>
-                    <div className=''>
-                        <img className='rounded-lg ' src={iconEdit} />
-                    </div>
+                    <button>
+                        <img className='rounded-lg ' src={Edit} />
+                    </button>
                 </div>
                 <div className=' bg-orange-500 w-full h-[2.5px] rounded-lg mb-5 '></div>
                 <div className="flex flex-wrap gap-2">
