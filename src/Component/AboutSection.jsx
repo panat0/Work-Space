@@ -1,5 +1,4 @@
 import React from 'react';
-import { User } from 'lucide-react';
 import iconUser from '../image/iconUser.png'
 import Edit from '../image/edit.png'
 
